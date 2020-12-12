@@ -1,0 +1,41 @@
+<scroll-view class="" style="padding-top:120rpx; padding-bottom:140rpx">
+    <view class="text-bold margin-left" style="font-size:60rpx">Hi
+    <open-data type="userNickName"></open-data>, </view>
+    <view class="margin-left margin-top-xs text-grey">Nice to meet you!</view>
+    <view class="padding-bottom margin-top margin-left" style="position:relative">
+        <view class="shadow bg-gradual-blue padding-lg margin-top-lg" style="height:400rpx;color:white;width:100%;border-top-left-radius:24rpx;border-bottom-left-radius:24rpx;">
+            <view class="text-bold" style="font-size:40rpx">Microsoft Recruitment</view>
+            <view class="margin-top text" style="margin-right:160rpx; line-height:1.6">{{slogan}}</view>
+            <view bindtap="findMyJob" class="text-bold margin-top cu-btn bg-white round" style="color:#5BA4E9">Find my job!</view>
+        </view>
+        <image class="align-end" mode="aspectFit" src="../../images/000.png" style="position:absolute; bottom:0px; right:20rpx; width: 180rpx; height:340rpx"></image>
+    </view>
+    <view class="text-bold margin text-lg text-gray">You should know</view>
+    <view bindtap="toJobGuide" class="padding bg-white shadow margin-top-lg margin-left" style="border-top-left-radius:24rpx;border-bottom-left-radius:24rpx;">
+        <view class="flex align-center">
+            <image src="../../images/ic_application.png" style="width:80rpx; height:80rpx"></image>
+            <view class="margin-left-lg">
+                <view class="text-bold text-lg">职位申请指南</view>
+                <view class="margin-top-xs text-gray text-sm">Guide of job application</view>
+            </view>
+        </view>
+    </view>
+    <view bindtap="toWorkAtMS" class="padding bg-white shadow margin-top margin-left" style="border-top-left-radius:24rpx;border-bottom-left-radius:24rpx;">
+        <view class="flex align-center">
+            <image src="../../images/ic_balance.png" style="width:80rpx; height:80rpx"></image>
+            <view class="margin-left-lg">
+                <view class="text-bold text-lg">在微软工作是什么样的体验？</view>
+                <view class="margin-top-xs text-gray text-sm">What is the experience of working at Microsoft?</view>
+            </view>
+        </view>
+    </view>
+    <view bindtap="toAboutTab" class="padding bg-white shadow margin-top margin-left margin-bottom" style="border-top-left-radius:24rpx;border-bottom-left-radius:24rpx;">
+        <view class="flex align-center">
+            <image src="../../images/ic_benefit.png" style="width:80rpx; height:80rpx"></image>
+            <view class="margin-left-lg">
+                <view class="text-bold text-lg">微软工作的待遇和福利怎么样？</view>
+                <view class="margin-top-xs text-gray text-sm">How about the $$ and benefits of Microsoft work?</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

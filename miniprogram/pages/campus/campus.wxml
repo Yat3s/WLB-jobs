@@ -1,0 +1,34 @@
+<view style="">
+    <view class="flex align-end margin-bottom-lg">
+        <image src="../../images/jobs_header.png" style="width:240rpx; height:280rpx"></image>
+        <view style="">
+            <view class="text-bold margin-left" style="font-size:48rpx">Hi
+        <open-data type="userNickName"></open-data>,</view>
+            <view class="margin-left margin-top-xs text-grey margin-bottom">Nice to meet you!</view>
+        </view>
+    </view>
+    <view bindtap="toDetail" class="padding shadow-blur bg-gradual-blue margin-sm" style="border-radius:24rpx; height:400rpx; background:url(https://776c-wlbjob-wxlad-1300066075.tcb.qcloud.la/background/img_campus2-min.jpg?sign=c981cad7ca2c5e0fc6aa72772d309067&t=1574319757); background-size:100% 100%">
+        <view class="flex">
+            <view>
+                <view class="text-bold text-white" style="font-size: 36rpx">微软 2020 校园招聘仍在继续！</view>
+                <view class="margin-top-xs"> 苏州 · 北京 · 上海</view>
+            </view>
+        </view>
+        <view class="text-bold" style="font-size:60rpx; position:absolute; left: 24rpx; bottom:24rpx"> 10/19 - 11/20 </view>
+        <button class="text-bold margin-top cu-btn bg-ms3 round text-sm" openType="contact" style="position:absolute; right: 24rpx; bottom:24rpx;">
+      Apply NOW!
+    </button>
+    </view>
+    <view bindtap="toDetail" class="padding shadow-blur bg-gradual-blue margin-sm" style="border-radius:24rpx; height:400rpx; background:url(https://776c-wlbjob-wxlad-1300066075.tcb.qcloud.la/background/img_campus1-min.jpg?sign=e6bd82c9bff76f50bcbed82265c33ad7&t=1574319769); background-size:100% 100%">
+        <view class="flex">
+            <view>
+                <view class="text-bold text-white" style="font-size: 36rpx">微软校招 | 冬季实习生项目火热进行中</view>
+                <view class="margin-top-xs"> 苏州 · 北京 · 上海</view>
+            </view>
+        </view>
+        <view class="text-bold" style="font-size:60rpx; position:absolute; left: 24rpx; bottom:24rpx"> 11/05 - 11/11 </view>
+        <button class="text-bold margin-top cu-btn bg-ms3 round text-sm" openType="contact" style="position:absolute; right: 24rpx; bottom:24rpx;">
+      Apply NOW!
+    </button>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "home": "/pages/home/home",
+        "jobs": "/pages/jobs/jobs",
+        "campus": "/pages/campus/campus",
+        "about": "/pages/about/about",
+        "cu-custom": "/colorui/components/cu-custom"
+    }
+}

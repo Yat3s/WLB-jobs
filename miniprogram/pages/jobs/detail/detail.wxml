@@ -1,0 +1,60 @@
+<scroll-view style="padding-bottom:120rpx">
+    <view class="padding-lg shadow-blur margin bg-black" style="border-radius: 24rpx; margin-top:160rpx">
+        <image bindtap="back" src="../../../images/ic_terminal.png" style="height:36rpx;width:144rpx"></image>
+        <view class="text-bold margin-top-sm" style="font-size:48rpx">
+            <text class="text-yellow">#</text> {{job.title}}
+
+    </view>
+        <view class="margin-top-xs text-gray">{{job.city}}
+      <text class="text-bold text-green">/</text> {{job.org}}</view>
+        <view class="flex margin-top">
+            <view class="radius text-sm margin-right-sm" style="padding-left:12rpx;padding-right:12rpx; padding-top:8rpx;padding-bottom:8rpx; background-color:#555555" wx:for="{{job.tags}}" wx:for-item="tag" wx:key="{{tag}}">
+        {{tag.name}}
+      </view>
+        </view>
+        <view class="margin-top-lg margin-bottom-sm text-bold text-lg"># Overview</view>
+        <view class="text-grey" style="line-height:1.5">{{job.overview}}</view>
+        <view class="margin-top-lg text-bold text-lg text-yellow"># Qualifications</view>
+        <view class="text-grey" style="line-height:1.5" wx:for="{{job.qualifications}}">
+            <text class="text-white text-bold" style="font-size:36rpx"> · </text> {{item}}</view>
+    </view>
+</scroll-view>
+<view class="shadow-lg align-center bg-white flex bg-gray padding justify-between" style="position: fixed; bottom:0; width:100%; height:100rpx">
+    <view class="flex align-center">
+        <button bindtap="back" class="cu-btn bg-gray text-bold" style="border-radius:12rpx;">ESC</button>
+        <view class="margin-left margin-right" style="width:4rpx; height:48rpx;background-color:#cfcfcf"></view>
+        <button class="cu-btn text-bold" openType="share" style="border-radius:12rpx;">Share</button>
+        <button class="margin-left cu-btn text-bold" openType="contact" style="border-radius:12rpx;">Refer</button>
+    </view>
+    <button bindtap="contactHR" class="shadow-blur cu-btn text-center bg-ms3" style="border-radius:12rpx;">
+    Contact HR
+  </button>
+</view>
+<view class="cu-modal {{showQuestionModal?'show':''}}">
+    <view class="cu-dialog">
+        <view class="cu-bar bg-white justify-end">
+            <view class="content">请选择以下代码执行结果</view>
+            <view bindtap="hideModal" class="action">
+                <text class="cuIcon-close text-red"></text>
+            </view>
+        </view>
+        <view class="padding-lg bg-black text-left">
+            <text class="">
+     int sum = 0; 
+     for (int i = 10; i > -3 ;i--){
+          if (i%2 !=0){
+          sum += i;
+     }
+    }
+     </text>
+        </view>
+        <view class="cu-bar bg-white justify-between">
+            <view class="padding-left padding-right flex justify-between" style="width:100%">
+                <button class="cu-btn bg-green " openType="contact">24</button>
+                <button class="cu-btn bg-green " openType="contact">21</button>
+                <button class="cu-btn bg-green " openType="contact">6</button>
+                <button class="cu-btn bg-green " openType="contact">28</button>
+            </view>
+        </view>
+    </view>
+</view>

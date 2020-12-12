@@ -1,0 +1,47 @@
+<scroll-view class="" style="padding-bottom:160rpx">
+    <view class="padding-bottom" style="position:relative">
+        <view class="bg-ms3 shadow-blur padding-lg" style="padding-top:100rpx;;color:white;width:100%;border-bottom-left-radius:80rpx;">
+            <view class="text-bold" style="font-size:40rpx">About Microsoft</view>
+            <view class="margin-top" style="margin-right:160rpx; line-height:1.6">{{companyIntro}}</view>
+        </view>
+        <image class="align-end" mode="aspectFit" src="../../images/person4.png" style="position:absolute; bottom:0px; right:20rpx; width: 180rpx; height:340rpx"></image>
+    </view>
+    <view class="margin-left-sm margin-top text-bold text-lg text-grey">Sites</view>
+    <scroll-view scrollX="true">
+        <view class="flex padding-sm">
+            <view class="shadow-blur center text-white margin-right text-bold text-lg" style="font-size: 36rpx; min-width:320rpx; min-height:160rpx; border-radius:12rpx; background:url({{item.bgimg}});  background-size:100% 100%" wx:for="{{sites}}">
+        {{item.name}}
+      </view>
+        </view>
+    </scroll-view>
+    <view class="margin-left-sm margin-top text-bold text-lg text-grey">You care about</view>
+    <view class="shadow bg-gradual-red padding margin-left-sm margin-top margin-right-sm text-bold" style="border-top-left-radius:24rpx">Move Hukou to Suzhou/ 落户苏州条件</view>
+    <view class="shadow bg-gradual-blue padding margin-left-sm margin-top margin-right-sm text-bold" style="border-top-left-radius:24rpx">Qualification of house purchase/ 买房资格相关信息</view>
+    <view class="shadow bg-cyan padding margin-left-sm margin-top margin-right-sm text-bold" style="border-top-left-radius:24rpx">Government's talents policy (allowance)/ 政府人才政策及补贴  </view>
+    <view class="shadow bg-gradual-green padding margin-left-sm margin-top margin-right-sm text-bold" style="border-top-left-radius:24rpx">House funding/ 公积金提取条件 (Chinese)</view>
+    <view class="shadow bg-mauve padding margin-left-sm margin-top margin-right-sm text-bold" style="border-top-left-radius:24rpx">Club introduction and contact information/ 兴趣社团介绍及联系方式 </view>
+    <view class="shadow bg-cyan padding margin-left-sm margin-top margin-right-sm text-bold" style="border-top-left-radius:24rpx">More / 更多... </view>
+    <view class="margin-left-sm margin-bottom margin-top text-bold text-lg text-grey">Benefits and Perks</view>
+    <view class="flex justify-between padding-left-sm padding-right-sm">
+        <view class="text-lg shadow center bg-gradual-red padding bg-white text-bold" style="border-radius:12rpx; width:32%;height:160rpx">
+      志愿者假
+    </view>
+        <view class="text-lg shadow center bg-gradual-blue padding bg-white  text-bold" style="border-radius:12rpx; width:32%;height:160rpx">
+      微软家庭日
+    </view>
+        <view class="text-lg shadow center bg-gradual-orange padding bg-white  text-bold" style="border-radius:12rpx; width:32%;height:160rpx">
+      新父母假期
+    </view>
+    </view>
+    <view class="flex justify-between padding-left-sm padding-right-sm margin-top">
+        <view class="text-lg shadow center bg-gradual-green padding bg-white text-bold" style="border-radius:12rpx; width:32%;height:160rpx">
+      微软关怀
+    </view>
+        <view class="text-lg shadow center bg-gradual-red padding bg-white  text-bold" style="border-radius:12rpx; width:32%;height:160rpx">
+      家人看护
+    </view>
+        <view class="text-lg shadow center bg-gradual-blue padding bg-white  text-bold" style="border-radius:12rpx; width:32%;height:160rpx">
+      定期旅游
+    </view>
+    </view>
+</scroll-view>

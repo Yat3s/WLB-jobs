@@ -1,0 +1,57 @@
+<view style="">
+    <view class="bg-white" style="padding-top:120rpx; padding-bottom:12rpx; border-bottom-left-radius:36rpx; border-bottom-right-radius:48rpx;">
+        <view class="flex align-end justify-between">
+            <view class="padding">
+                <view class="text-black" style="font-size:60rpx">Find your
+          <text class="text-bold">Job</text>
+                </view>
+                <view class="margin-top-xs text-gray" style="font-size:32rpx">Create the future you want</view>
+            </view>
+        </view>
+        <image class="" src="../../images/ic_jobs_header.png" style="z-index:100;position:absolute; top: 166rpx; right:60rpx; width:160rpx; height:160rpx"></image>
+        <view class="cu-bar search" style="">
+            <view class="round shadow-blur search-form padding-left" style="">
+                <input bindinput="onSearchChange" class="" confirmType="search" placeholder="Search" type="text" value="{{input}}"></input>
+                <image bindtap="clearInput" class="margin-right-sm" src="../../images/ic_close.png" style="width:32rpx;height:32rpx" wx:if="{{input.length>0}}"></image>
+            </view>
+        </view>
+    </view>
+    <scroll-view scrollX="true">
+        <view class="flex padding-left-sm padding-top padding-bottom padding-right-sm">
+            <view bindtap="selectTag" class="{{currentTagIndex===-1?'bg-gradual-blue':'bg-white'}} shadow-blur padding margin-right-sm center" data-index="-1" style="border-radius:12rpx;min-width:160rpx;">
+                <view class="text-bold text-center text-lg">ALL</view>
+            </view>
+            <view bindtap="selectTag" class="{{currentTagIndex===index?'bg-gradual-blue':'bg-white'}} shadow-blur padding margin-right-sm center" data-index="{{index}}" style="border-radius:12rpx;min-width:160rpx" wx:for="{{tags}}">
+                <image src="{{item.icon}}" style="width:48rpx;height:60rpx"></image>
+                <view class="margin-top-sm text-bold text-center text-sm">#{{item.name}}</view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="margin-top-xs" style="padding-bottom:120rpx">
+        <view class="padding-left-sm padding-right-sm padding-bottom" wx:if="{{!item.hidden}}" wx:for="{{jobs}}">
+            <view bindtap="toJobDetail" class="padding shadow-blur bg-white" data-jobid="{{item._id}}" style="border-radius: 24rpx">
+                <view class="flex">
+                    <image src="{{item.icon}}" style="width:60rpx;height:60rpx"></image>
+                    <view class="margin-left-sm">
+                        <view class="text-bold" style="font-size:32rpx">{{item.title}}</view>
+                        <view class="margin-top-xs text-gray text-bold">{{item.org}}</view>
+                    </view>
+                </view>
+                <view class="margin-top-sm padding" style="border-radius:16rpx; background-color:#f7f7f7">
+                    <view class="center-v">
+                        <image src="../../images/ic_location.png" style="width:28rpx; height:28rpx"></image>
+                        <text class="margin-left-sm text-gray">{{item.city}}</text>
+                    </view>
+                    <view class="center-v margin-top-xs">
+                        <image src="../../images/ic_tag.png" style="width:28rpx; height:28rpx"></image>
+                        <view class="margin-left-sm center-v">
+                            <view class="margin-right-sm text-gray" style="" wx:for="{{item.tags}}" wx:for-item="tag" wx:key="{{tag}}">
+                {{tag.name}}
+              </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

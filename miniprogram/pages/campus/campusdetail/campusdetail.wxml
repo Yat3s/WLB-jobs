@@ -1,0 +1,34 @@
+<cu-custom isBack="{{true}}">
+    <view slot="content"></view>
+</cu-custom>
+<view class=" bg-white padding margin" style="border-radius:16rpx">
+    <text class="text-bold text-black text-lg">微软 2020 校园招聘
+  </text>
+    <text>
+错过微软网申时间的小伙伴们，微软苏州2020全职员工校园招聘仍在火热进行中！Office 365团队仍有大量校招职位开放，等你来投递~
+
+## 招聘对象
+2020年应届毕业生
+
+## 热招职位
+软件开发工程师 (工作地点: 苏州)
+
+## 投递方式
+https://careers.microsoft.com/students/us/en/job/687714/2020-Graduates-Software-Engineer-STCA-Suzhou
+
+## 投递注意事项 
+请点击职位链接进行投递，链接直达微软招聘官网
+请使用电脑端申请，务必记得上传简历（中英文）
+请已参加过今年微软校招面试的同学及已被内推过的同学不要重复申请哦
+
+我们是Office 365 团队
+微软苏州Office365 研发团队聚集了300多位来自全国以及很多其他国家的优秀工程师，并持续稳定地发展壮大。团队研发方向广泛，包括云计算架构, 数据安全, 大数据分析, 机器学习, 移动端开发等。
+产品/团队介绍请戳：
+https://products.office.com/en-us/?ms.url=office365com 
+
+我们在微软苏州等你!
+</text>
+    <button class="margin-top-lg shadow-blur cu-btn text-center bg-gradual-red" openType="contact" style="border-radius:12rpx;">
+    Apply NOW!
+  </button>
+</view>

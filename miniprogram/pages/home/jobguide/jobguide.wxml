@@ -1,0 +1,60 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText"></view>
+    <view slot="content">微软职位申请流程</view>
+</cu-custom>
+<view class="cu-timeline">
+    <view class="cu-time"> NOW</view>
+    <view class="cu-item cur cuIcon-noticefill">
+        <view class="content bg-green shadow-blur" style="border-top-left-radius:24rpx">
+      在小程序内根据自己意向搜索相关的职位
+    </view>
+    </view>
+    <view class="cu-item text-red cuIcon-attentionforbidfill">
+        <view class="content bg-red shadow-blur" style="border-top-left-radius:24rpx">
+      仔细阅读该工作的 Qualifications
+    </view>
+    </view>
+    <view class="cu-item text-grey cuIcon-evaluate_fill">
+        <view class="content bg-grey shadow-blur" style="border-top-left-radius:24rpx">
+      找到合适职位：联系 HR，咨询更多关于该职位的信息
+    </view>
+        <view class="bg-cyan content" style="border-top-left-radius:24rpx">
+      未找到合适职位：联系 HR，咨询其他符合自己的职位
+    </view>
+    </view>
+    <view class="cu-item text-blue">
+        <view class="shadow-blur bg-gradual-blue content" style="border-top-left-radius:24rpx">
+      投递个人简历给 HR
+    </view>
+    </view>
+    <view class="cu-item text-blue">
+        <view class="shadow-blur bg-gradual-red content" style="border-top-left-radius:24rpx">
+      HR 会在一定时间内给你安排面试
+    </view>
+    </view>
+    <view class="cu-item text-blue">
+        <view class="shadow-blur bg-gradual-pink content" style="border-top-left-radius:24rpx">
+      提前准备好 1-2 轮的 Online 面试
+    </view>
+    </view>
+    <view class="cu-item text-blue">
+        <view class="shadow-blur bg-cyan content" style="border-top-left-radius:24rpx">
+      2 - 4 轮 Onsite 面试
+    </view>
+    </view>
+    <view class="cu-item text-blue">
+        <view class="shadow-blur bg-orange content" style="border-top-left-radius:24rpx">
+      发放 Offer
+    </view>
+    </view>
+    <view class="cu-item text-blue">
+        <view class="shadow-blur bg-mauve content" style="border-top-left-radius:24rpx">
+      接受 Offer 并配合背景调查
+    </view>
+    </view>
+    <view class="cu-item text-blue">
+        <view class="shadow-blur bg-gradual-red content" style="border-top-left-radius:24rpx">
+      恭喜你加入微软！
+    </view>
+    </view>
+</view>
