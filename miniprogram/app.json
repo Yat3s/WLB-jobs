@@ -9,7 +9,8 @@
     "pages/home/workatms/workingatms",
     "pages/about/sites/sitedetail",
     "pages/campus/campusdetail/campusdetail",
-    "pages/home/jobguide/jobguide"
+    "pages/home/jobguide/jobguide",
+    "pages/jobv2/jobv2"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

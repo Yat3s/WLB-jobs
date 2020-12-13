@@ -62,6 +62,12 @@
         {
           "name": "pages/jobs/jobs",
           "pathName": "pages/jobs/jobs",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/jobv2/jobv2",
+          "pathName": "pages/jobv2/jobv2",
           "scene": null
         }
       ]
