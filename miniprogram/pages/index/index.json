@@ -2,6 +2,7 @@
     "usingComponents": {
         "home": "/pages/home/home",
         "jobs": "/pages/jobs/jobs",
+        "jobv2": "/pages/jobv2/jobv2",
         "campus": "/pages/campus/campus",
         "about": "/pages/about/about",
         "cu-custom": "/colorui/components/cu-custom"

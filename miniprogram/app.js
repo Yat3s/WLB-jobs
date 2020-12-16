@@ -23,7 +23,26 @@ App({
         this.globalData.windowWidth = e.windowWidth
         console.log(this.globalData)
       }
+    });
+  },
+
+  retrieveJobs(forceRefresh = false) {
+    const promise = new Promise((resolve, reject) => {
+      if (this.globalData.jobs && this.globalData.length > 0 && !forceRefresh) {
+        console.log("Retrieve jobs directly");
+        resolve(this.globalData.jobs);
+      } else {
+        wx.cloud.database().collection("jobs").get().then(res => {
+          console.log("Loaded the latest jobs: ", res.data);
+          this.globalData.jobs = res.data;
+          resolve(this.globalData.jobs);
+        }).catch(err => {
+          console.error("Failed to load jobs ", err);
+          reject(err)
+        })
+      }
     })
+    return promise;
   },
 
   globalData: {}
